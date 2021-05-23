@@ -1,0 +1,42 @@
+a
+    text-decoration: none
+    color: #333
+    &:hover
+        color: #333
+        text-decoration: none
+.custom
+    &-btn
+        background-color: #E5E5E5
+        border: none
+        padding: 5px 20px
+        border-radius: 4px
+        color: #777
+        &:hover
+            background-color: darken(#E5E5E5, 5%)
+        &-accent
+            background-color: $accent
+            color: #FFF
+            &:hover
+                color: #FFF
+                background-color: darken($accent, 5%)
+    &-input
+        background-color: #f0f0f0
+        border: none
+        border-radius: 4px
+        padding: 5px 15px
+        display: block
+        width: 100%
+        color: #666
+        transition: all 0.2s 0.1s ease
+        &:focus
+            background-color: darken(#E5E5E5, 5%)
+
+.user-image
+    border-radius: 100px
+    overflow: hidden
+    width: 100px
+    height: 100px
+    border: 2px solid #CCC
+
+.text-small
+    font-size: 10px
