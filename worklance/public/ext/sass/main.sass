@@ -1,0 +1,101 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+.fullHeight
+	min-height: 100vh
+.nav-link
+	color: #fff
+	font-weight: bold
+	font-size: 12px
+	&:hover
+		color: $blue
+
+.text-center
+	text-align: center
+
+.main-text
+	margin-top: 20vh
+	&-p
+		font-size: 18px
+		font-weight: 100
+		line-height: 25px
+	.btn
+		padding: 8px 30px
+		font-size: 12px
+		font-weight: bold
+	.white
+		color: #fff
+	.link
+		text-decoration: none
+		&:hover
+			color: $accent
+.main-pics
+	margin-top: 10vh
+	&-img
+		width: 100px
+		margin: 5px 0px
+		&:hover
+			cursor: move
+			transform: scale(1.05)
+			transition: all 0.1s 0.1s ease
+.main-second
+	margin-top: 10vh
+	&-h1
+		font-weight: 100
+	&-numbers
+		font-size: 100px
+		font-weight: bold
+		text-align: center
+		width: 100%
+	&-paragraph
+		font-size: 18px
+		text-align: center
+	&-center
+		// background-color: red
+		text-align: center
+		margin-top: 30px
+
+.rocket
+	width: 80px
+	margin: auto
+.image-pcman
+	width: 100%
+	margin-top: 10vh
+.partners
+	margin-top: 30px
+	display: flex
+	justify-content: space-between
+	img
+		max-width: 20%
+		height: auto
+
+
+b, strong
+	font-weight: bold
+
+
+
+@import "media" // Always at the end
